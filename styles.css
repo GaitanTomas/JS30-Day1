@@ -1,0 +1,65 @@
+/* -------VARIABLES------- */
+:root{
+    --color-principal: white;
+    --color-secundario: #ffc600;
+}
+
+/* -------BACKGROUND / HTML------- */
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* -------KEYS------- */
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    margin: 1rem;
+    padding: 1.1rem .5rem;
+    width: 10rem;
+    font-size: 4rem;
+    border: .4rem solid black;
+    border-radius: .5rem;
+    color: var(--color-principal);
+    background: rgba(0,0,0,0.8);
+    text-shadow: 0 0 .5rem black;
+    transition: all .07s ease;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--color-secundario);
+}
+
+/* -------PLAYING------- */
+.playing {
+    transform: scale(1.1);
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 1rem var(--color-secundario);
+}
